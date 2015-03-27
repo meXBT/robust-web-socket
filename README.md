@@ -5,4 +5,4 @@ connection open. Useful if you are listening to websockets which perhaps don't h
 
 ## Install
 
-  npm install robust-web-socket
+`npm install robust-web-socket`
