@@ -1,0 +1,30 @@
+{
+  "name": "robust-web-socket",
+  "version": "0.0.1",
+  "description": "Web Socket to be used with flaky servers",
+  "main": "lib/robust_web_socket.js",
+  "scripts": {
+    "build": "coffee --bare --compile *.coffee",
+    "prepublish": "coffee --output lib --compile src"
+  },
+  "keywords": [
+    "websocket",
+    "socket",
+    "robust"
+  ],
+  "author": {
+    "name": "William Coates",
+    "email": "william.coates@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/williamcoates/robust-web-socket.git"
+  },
+  "dependencies": {
+    "ws": "^0.7.1"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.1"
+  }
+}
