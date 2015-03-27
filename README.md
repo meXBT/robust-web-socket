@@ -6,3 +6,13 @@ connection open. Useful if you are listening to websockets which perhaps don't h
 ## Install
 
 `npm install robust-web-socket`
+
+## Usage
+
+```CoffeeScript
+onOpen = (socket) ->
+  socket.send("I can haz open")
+onMessage = (message) ->
+  console.log("I can haz message")
+socket = new RobustWebSocket("wss://my.funky.web.socket.com", onOpen, onMessage, {debug: true})
+```
